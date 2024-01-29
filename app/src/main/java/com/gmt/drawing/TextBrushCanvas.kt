@@ -6,11 +6,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.TextMeasurer
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.drawText
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun TextBrushCanvas(
@@ -44,6 +48,7 @@ fun TextBrushCanvas(
                         textMeasurer = textMeasurer,
                         text = brushCharacter.character.value,
                         topLeft = brushCharacter.topLeft,
+                        style = TextStyle(fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.White),
                         size = brushCharacter.character.size,
                     )
                 }

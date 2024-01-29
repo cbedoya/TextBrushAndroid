@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -20,25 +21,29 @@ fun TextBrushControls(
         IconButton(onClick = onUndoClick) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_undo),
-                contentDescription = null
+                contentDescription = null,
+                tint = Color.White
             )
         }
         IconButton(onClick = onNewBrushClick) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_new_brush),
-                contentDescription = null
+                contentDescription = null,
+                tint = Color.White
             )
         }
         IconButton(onClick = onTextClick) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_text),
-                contentDescription = null
+                contentDescription = null,
+                tint = Color.White
             )
         }
         IconButton(onClick = onDebugClick) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_debug),
-                contentDescription = null
+                contentDescription = null,
+                tint = Color.White
             )
         }
     }
